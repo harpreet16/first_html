@@ -3,7 +3,11 @@
 	padding: 0;
 }
 
-
+hr{
+    width: 60px;
+    /*background-color: black;*/
+    /*border-top: 2px solid #000000;*/
+}
 
 
 
@@ -11,30 +15,40 @@
  	margin-top:50px;
  	margin-bottom:50px;
  	text-align: center;
-    color:#7e5510;
+    color:black;
+    padding-left:  18%;
+    padding-right: 18%;
  }
 
 
  .p {
- 	display: block;
+ 	display: inline-block;
     position: absolute;
-    top: 30%;
-    left: 56%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
-    color:white;
-     font-stretch: 2%;
+    top: 27%;
+    left: 41%;
+    font-size: 148px;
+    color: white;
+    font-family: railway_thin;
+}
+@font-face{
+font-family: railway_thin;
+src:url("Raleway/Raleway-Thin.ttf");
 }
 .p1{
 
-    display: block;
-    position: absolute;
-    top: 36%;
-    left: 60%;
-    transform: translate(-50%, 0%);
-    font-size: 50px;
-    color:white;
+display: block;
+position: absolute;
+top: 49%;
+left: 43%;
+font-size: 45px;
+color: white;
+font-family: raleway_bold;
+letter-spacing: 8px;
 
+}
+@font-face{
+font-family: raleway_bold;
+src:url("Raleway/Raleway-Bold.ttf");
 }
 
 #a
@@ -54,10 +68,14 @@
      font-size:20px;
      cursor:pointer;
      right:40px ;
-     top:20px; 
+     top:31px; 
      position:absolute;
-     text-decoration: underline;
      color:white;
+     border-top-style: solid;
+     border-bottom-style: solid;
+     border-top-width: 2px;
+     border-bottom-width: 2px;
+
      }
 
 	.overlay {
@@ -78,6 +96,14 @@
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    font-family: montserrat-bold;
+    letter-spacing: 5px;
+}
+
+@font-face{
+
+    font-family: montserrat-bold;
+    src:url("Montserrat/Montserrat-Bold.ttf");
 }
 
 .overlay a {
@@ -103,17 +129,15 @@
     position: relative;
     width:100%;
     min-height: 500px;
-    margin-top: 50px;
+    margin-top: 2%;
  }
 
 
  .back{
-    margin-top:50px;
     position: absolute;
     width: 50%;
     background-color:pink;
-    height:400px;
-    z-index:-1;
+    height:500px;
 }
 .twoimg_img{
     left:50%;
@@ -138,8 +162,9 @@
   height: 13px;
   width: 13px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: white;
   border-radius: 50%;
+  border-color: blue;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
@@ -185,11 +210,10 @@ left:15%;
  }
 
 .ha{
-    margin-top:50px;
     position: absolute;
     width: 100%;
     background-color:#111538;
-    height:400px;
+    height:500px;
     z-index:-1;
 
 }
@@ -234,12 +258,17 @@ font-size: 20px;
 
 .stay{
     position:absolute;
-    top:30%;
+    top:25%;
     color:white;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
     left:30%;
-    z-index: 1;
+    font-family: true;
+    letter-spacing: 2px; 
+}
+@font-face{
+    font-family: true;
+    src:url("TCCM____.TTF");
 }
 
 .lowest_sec{
@@ -261,32 +290,94 @@ font-size: 20px;
 #man{
     position:absolute;
     text-align: center;
-    font-size: 30px;
-    top:20%;
+    font-size: 28px;
+    top:27%;
+    left:28%;
     color:white;
+    font-family:foot_head;
 }
 #cup{
     position: absolute;
     text-align: center;
-    font-size: 20px;
-     top:20%;
-     left:10%;
+    font-size: 30px;
+     top:10%;
+     left:32%;
+     font-family:lakes;
+}
+@font-face{
+    font-family:lakes;
+    src:url("GreatLakesNF.ttf");
+
 }
 .img_man{
     min-height: 442px;
     position:relative;
 }
+.foot{
+    font-family:foot_head;
+    letter-spacing: 1px;
+}
+@font-face{
+    font-family: foot_head;
+    src:url("Montserrat/Montserrat-Bold.ttf");
+}
+.last{
+    font-family:montserrat;
+    letter-spacing: 2px;
+}
+@font-face{
+    font-family:montserrat;
+    src:url("Montserrat/Montserrat-Regular.ttf");
+}
+.table{
+    font-family: raleway;
+}
+@font-face{
+    font-family: raleway;
+    src:url("Raleway/Raleway-Bold.ttf");
 
+}
+.bdy{
+    font-family: raleway_bdy;
+}
+@font-face{
+    font-family: raleway_bdy;
+    src:url("Raleway/Raleway-Medium.ttf");
+
+}
+.f{
+    font-family: raleway_f;
+}
+@font-face{
+    font-family: raleway_f;
+    src:url("Raleway/Raleway-Regular.ttf");
+
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .p {
+        font-size: 120px;
+        left:38%;
+    }
+    .p1{
+        font-size: 38px;
+
+    }
+}
 
 
 
 
 @media only screen and (max-width: 800px) {
     .p {
-        font-size: 50px;
+        font-size: 90px;
+        left:38%;
     }
     .p1{
-        font-size: 20px;
+        font-size: 30px;
     }
    #a{
         font-size:5px;
@@ -320,7 +411,7 @@ font-size: 20px;
 
     }
     .back{
-        height:200px;
+        height:300px;
 
     }
     .twoimg_img{
@@ -389,7 +480,7 @@ left:10%;
 
     }
     .back{
-        height:150px;
+        height:200px;
 
     }
     .twoimg_img{
@@ -457,7 +548,7 @@ left:10%;
 
     }
     .back{
-        height:150px;
+        height:200px;
 
     }
     .twoimg_img{
@@ -520,7 +611,7 @@ left:10%;
 
     }
     .back{
-        height:90px;
+        height:100px;
 
     }
     .twoimg_img{
