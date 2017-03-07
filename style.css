@@ -3,6 +3,16 @@
 	padding: 0;
 }
 
+
+
+#myCarousel .carousel-indicators li{
+    margin:0 4px;
+    background-color: black;
+}
+#myCarousel .carousel-indicators li.active{
+    background-color: white;
+}
+
 hr{
     width: 60px;
     /*background-color: black;*/
@@ -82,7 +92,7 @@ src:url("Raleway/Raleway-Bold.ttf");
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     top: 0;
     left: 0;
     background-color: rgba(0,0,0, 0.9);
@@ -98,6 +108,7 @@ src:url("Raleway/Raleway-Bold.ttf");
     margin-top: 20px;
     font-family: montserrat-bold;
     letter-spacing: 5px;
+    z-index: 20;
 }
 
 @font-face{
@@ -122,6 +133,7 @@ src:url("Raleway/Raleway-Bold.ttf");
 .b{
     text-align: center;
     font-size: 40px;
+    margin-bottom: 3%;
     
 }
 
@@ -141,49 +153,48 @@ src:url("Raleway/Raleway-Bold.ttf");
 }
 .twoimg_img{
     left:50%;
-    z-index: 1;
     position: absolute;
     height:500px;
     width: 50%;
 
 }
 
-  .text{
+.text{
 
-     	margin-top: 18px;
-     	padding:50px;
-     	font-size: 20px;
+     margin-top: 18px;
+     padding:50px;
+     font-size: 20px;
 
      }
 
 
 
 .dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: white;
-  border-radius: 50%;
-  border-color: blue;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    border-color: black;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
+
 .dot_family{
-top:80%;
-position:absolute;
-left:15%;
+    top:80%;
+    position:absolute;
+    left:15%;
 }
 
 
 .active {
-  background-color: #717171;
+  background-color: black;
 }
 
 /* Fading animation */
-.fade {
-  
-  animation-name: fade;
-  animation-duration: 3s;
+.fade {  
+    animation-name: fade;
+    animation-duration: 3s;
 }
 
 
@@ -201,26 +212,26 @@ left:15%;
     font-size: 60px;
 }
 
-
 .banner{
-    position: relative;
-    width:100%;
+    background-image: url("webassets/hand2.jpeg");
+    background-position: center;
+    background-size: cover;
     min-height: 500px;
-    margin-top: 50px;
- }
+    width: 100%
+}
 
 .ha{
-    position: absolute;
+    position: relative;
     width: 100%;
-    background-color:#111538;
     height:500px;
-    z-index:-1;
+    z-index:4;
+    margin-top: 60px;
+    background-color: rgba(0,0,0,0.5);
 
 }
  
  #h{
-    z-index: 1;
-    opacity: 0.5;
+    z-index: 5;
     position: absolute;
     height:500px;
     width: 100%;
@@ -231,19 +242,20 @@ left:15%;
     position:absolute;
     color:white;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 40px;
     display: block;
     top: 50%;
     left: 50%;
     text-align: center;
     z-index: 1;
+    font-family: raleway;
 }
+
 
 #banner_foot{
-font-size: 20px;    
-
+    font-size: 20px;
+    font-family: raleway_bdy;
 }
-
 
 
 
@@ -253,78 +265,123 @@ font-size: 20px;
       width: 100%;
       margin: 0px;
       height: 500px;
+      background-color: transparent;
   }
 
 
+
+
+.lowest_sec{
+    background-color: #e0dedb;
+}
+
+
+.img_man{
+    background-image: url("webassets/man.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+.img_man_over{
+    background-color: rgba(0,0,0,0.5);
+    z-index: 4;
+    min-height: 500px;
+
+}
+
 .stay{
     position:absolute;
-    top:25%;
+    top:17%;
+    left:28%;     
     color:white;
-    font-size: 40px;
+    font-size: 51px;
     text-align: center;
-    left:30%;
     font-family: true;
     letter-spacing: 2px; 
+    
 }
 @font-face{
     font-family: true;
     src:url("TCCM____.TTF");
 }
 
-.lowest_sec{
-    background-color: #e0dedb;
+.share{
+    position: absolute;
+    bottom:5%;
+    color:white;
+    left:70%;
+
 }
+
+.img_mount{
+    background-image: url("webassets/mount.jpeg");
+    background-position: center;
+    background-size: cover;
+    min-height: 250px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
 
 #mount{
-    position: absolute;
-    font-size: 15px; 
-    top:20%;
-    left:10%;
-    z-index: 1;
-    color:#000000;
-
-
+    position:absolute;
+    top:11%;
+    left:6%;     
+    color:black;
+    font-size: 28px;
+    text-align: center;
+    font-family: true;
+    letter-spacing: 2px; 
+    
 }
+
 
 
 #man{
     position:absolute;
     text-align: center;
     font-size: 28px;
-    top:27%;
-    left:28%;
+    top:39%;
+    left:33%;
     color:white;
     font-family:foot_head;
+    z-index: 12;
 }
+
 #cup{
     position: absolute;
     text-align: center;
     font-size: 30px;
-     top:10%;
+     top:20%;
      left:32%;
      font-family:lakes;
 }
+
 @font-face{
     font-family:lakes;
     src:url("GreatLakesNF.ttf");
 
 }
-.img_man{
-    min-height: 442px;
-    position:relative;
-}
+
 .foot{
     font-family:foot_head;
     letter-spacing: 1px;
 }
+
 @font-face{
     font-family: foot_head;
     src:url("Montserrat/Montserrat-Bold.ttf");
 }
+
 .last{
     font-family:montserrat;
     letter-spacing: 2px;
 }
+
 @font-face{
     font-family:montserrat;
     src:url("Montserrat/Montserrat-Regular.ttf");
@@ -332,27 +389,40 @@ font-size: 20px;
 .table{
     font-family: raleway;
 }
+
 @font-face{
     font-family: raleway;
     src:url("Raleway/Raleway-Bold.ttf");
-
 }
+
 .bdy{
     font-family: raleway_bdy;
 }
+
 @font-face{
     font-family: raleway_bdy;
     src:url("Raleway/Raleway-Medium.ttf");
-
 }
+
 .f{
     font-family: raleway_f;
 }
+
 @font-face{
     font-family: raleway_f;
     src:url("Raleway/Raleway-Regular.ttf");
-
 }
+
+.footer{
+    background-color:  #e0dedb;
+    margin-top: 5%;
+}
+
+.link{
+    margin-right: 2%;
+}
+
+    
 
 
 
@@ -366,6 +436,10 @@ font-size: 20px;
         font-size: 38px;
 
     }
+    .stay{
+        font-size: 48px;
+    }
+    
 }
 
 
@@ -401,7 +475,7 @@ font-size: 20px;
 
     } 
     #mount{
-        font-size: 15px;
+        font-size: 25px;
     }
     #man{
         font-size: 25px;
@@ -419,22 +493,32 @@ font-size: 20px;
 
     }
     .dot {
-  height: 10px;
-  width: 10px;
-  margin: 0px;
-}
+         height: 10px;
+         width: 10px;
+         margin: 0px;
+    }
 
-.dot_family{
-top:90%;
-position:absolute;
-left:10%;
-}
-.img_man{
-    min-height: 400px;
-    position:relative;
-}
-
-
+    .dot_family{
+        top:90%;
+        position:absolute;
+        left:10%;
+    }
+    .banner{
+        min-height: 400px;
+    }
+    .ha{
+         max-height: 400px;
+    }
+    .stay{
+        font-size: 45px;
+    }
+    .img_man
+    {
+         min-height: 420px;
+    }
+   .img_man_over{
+        min-height: 420px;
+    }
 
    
 }
@@ -469,13 +553,13 @@ left:10%;
         font-size: 15px;    
 
     } 
-      #mount{
-        font-size: 12px;
+    #mount{
+        font-size: 25px;
     }
     #man{
-        font-size: 20px;
+        font-size: 25px;
     }
-     .twoimg{
+    .twoimg{
          min-height: 200px;
 
     }
@@ -488,23 +572,33 @@ left:10%;
 
     }
      .dot {
-    height: 8px;
-     width: 8px;
-    margin: 0px;
-}
-.dot_family{
-    top:85%;
-    position:absolute;
-    left:10%;
-}
+        height: 8px;
+         width: 8px;
+        margin: 0px;
+    }
+    .dot_family{
+        top:85%;
+        position:absolute;
+        left:10%;
+    }
 
-.img_man{
-    min-height: 350px;
-    position:relative;
-}
+    .banner{
+        min-height: 300px;
+    }
+    .ha{
+        max-height: 300px;
+    }
+    .stay{
+        font-size: 35px;
+    }
+    .img_man
+    {
+         min-height: 400px;
+    }
+   .img_man_over{
+        min-height: 400px;
+    }  
 
-
-   
 }
 
 
@@ -538,10 +632,10 @@ left:10%;
         padding:10px;
     }
       #mount{
-        font-size: 8px;
+        font-size: 25px;
     }
     #man{
-        font-size: 20px;
+        font-size: 25px;
     }
     .twoimg{
          min-height: 200px;
@@ -556,22 +650,28 @@ left:10%;
 
     }
      .dot {
-    height: 5px;
-    width: 5px;
-    margin: 0px;
-}
-.dot_family{
-    top:85%;
-    position:absolute;
-    left:10%;
-}
-.img_man{
-    min-height: 280px;
-    position:relative;
-}
+        height: 5px;
+        width: 5px;
+        margin: 0px;
+    }
+    .dot_family{
+        top:85%;
+        position:absolute;
+        left:10%;
+    }
+    .img_man
+    {
+         min-height: 380px;
+    }
+   .img_man_over{
+        min-height: 380px;
+    }
 
 
    }
+
+
+
 @media only screen and (max-width: 300px) {
     .p {
         font-size: 10px;
@@ -600,38 +700,29 @@ left:10%;
     font-size: 4px;
     padding:0px;
    }
-     #mount{
-        font-size: 5px;
-    }
+     
     #man{
-        font-size: 20px;
+        font-size: 25px;
     }
-     .twoimg{
+    .twoimg{
          min-height: 100px;
-
     }
     .back{
         height:100px;
-
     }
     .twoimg_img{
-        height:100px;
-        
+        height:100px;        
     }
      .dot {
-    height: 2px;
-    width: 2px;
-    margin: 0px;
-}
-.dot_family{
-    top:85%;
-    position:absolute;
-    left:10%;
-}
-
-   
-    
-    
+         height: 2px;
+         width: 2px;
+        margin: 0px;
+    }
+    .dot_family{
+        top:85%;
+        position:absolute;
+        left:10%;
+    } 
 }
 
 
