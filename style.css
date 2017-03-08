@@ -394,6 +394,9 @@ src:url("Raleway/Raleway-Bold.ttf");
     font-family: raleway;
     src:url("Raleway/Raleway-Bold.ttf");
 }
+.grid{
+    padding: 5%;
+}
 
 .bdy{
     font-family: raleway_bdy;
@@ -723,6 +726,12 @@ src:url("Raleway/Raleway-Bold.ttf");
         position:absolute;
         left:10%;
     } 
+    .last{
+        letter-spacing: 0px;
+    }
+    .foot{
+        letter-spacing: 0px;
+    }
 }
 
 
