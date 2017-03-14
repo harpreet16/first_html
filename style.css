@@ -380,7 +380,7 @@ src:url("Raleway/Raleway-Bold.ttf");
     background-image: url("webassets/mount.jpeg");
     background-position: center;
     background-size: cover;
-    min-height: 250px;
+    min-height: 271px;
     width: 100%;
     z-index: 2;
     position: relative;
@@ -418,8 +418,15 @@ src:url("Raleway/Raleway-Bold.ttf");
     src:url("Georgia.ttf");
  }
  .img_space{
-     margin-top: 8%;
+     margin-top: 6%;
  }
+
+.img-responsive.img_cup.right {
+    border-right: 12px solid #e0dedb;
+}
+.img-responsive.img_cup.left {
+    border-left: 12px solid #e0dedb;
+}
  /*.image_space{
     border-right: 18px solid #e0dedb;
  }*/
@@ -652,10 +659,10 @@ src:url("Raleway/Raleway-Bold.ttf");
         font-size: 48px;
     }
     .img_man{
-        min-height: 454px;
+        min-height: 456px;
     }
     .img_man_over{
-        min-height: 454px;
+        min-height: 456px;
     }
     
 }
@@ -675,10 +682,10 @@ src:url("Raleway/Raleway-Bold.ttf");
         font-size: 48px;
     }
     .img_man{
-        min-height: 441px;
+        min-height: 456px;
     }
     .img_man_over{
-        min-height: 441px;
+        min-height: 456px;
     }
     
 }
