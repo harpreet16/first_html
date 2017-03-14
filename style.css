@@ -765,17 +765,18 @@ src:url("Raleway/Raleway-Bold.ttf");
 
    
 }
+@media only screen and (max-width: 750px){
 
-@media only screen and (max-width: 790px){
-     .border:nth-child(3) {
+  .border:nth-child(3) {
     border-right: 1px solid #e0dedb;
     border-bottom:0px; 
     }
     .border:first-child {
     border-right: 1px solid #e0dedb;
     }
-
 }
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -863,6 +864,7 @@ src:url("Raleway/Raleway-Bold.ttf");
     }  
 
 }
+
 
 
  
