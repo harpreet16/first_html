@@ -152,7 +152,7 @@ src:url("Raleway/Raleway-Bold.ttf");
 .overlay a {
     padding: 6px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 32px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -195,7 +195,7 @@ src:url("Raleway/Raleway-Bold.ttf");
 
      margin-top: 18px;
      padding:40px;
-     font-size: 20px;
+     font-size: 22px;
      padding-left: 10%;
      padding-right: 20%;
      padding-top: 10%;
@@ -211,7 +211,7 @@ src:url("Raleway/Raleway-Bold.ttf");
     height: 13px;
     width: 13px;
     margin: 0 2px;
-    background-color: white;
+    background-color: #ffddd5;
     border-radius: 50%;
     border: 1px solid black;
     display: inline-block;
@@ -342,7 +342,7 @@ src:url("Raleway/Raleway-Bold.ttf");
 .stay{
     position:absolute;
     top:17%;
-    left:28%;     
+    left:26%;     
     color:white;
     font-size: 51px;
     text-align: center;
@@ -680,6 +680,7 @@ src:url("Raleway/Raleway-Bold.ttf");
     }
     .stay{
         font-size: 48px;
+        left: 34%;
     }
     .img_man{
         min-height: 456px;
@@ -700,6 +701,9 @@ src:url("Raleway/Raleway-Bold.ttf");
     .p1{
         font-size: 11px;
     }
+    .overlay a{
+        font-size: 25px;
+    }
    #a{
         font-size:5px;
     }
@@ -715,6 +719,7 @@ src:url("Raleway/Raleway-Bold.ttf");
         margin-top: 15px;
         font-size: 12px;
         padding:40px;
+        padding-left: 10%;
     }
     .banner_txt{
         font-size: 25px;
@@ -769,6 +774,12 @@ src:url("Raleway/Raleway-Bold.ttf");
    .img_man_over{
         min-height: 400px;
     }
+    .img-responsive.img_cup.right {
+    border-right: 0px;
+}
+.img-responsive.img_cup.left {
+    border-left: 0px;
+}
 
    
 }
@@ -794,6 +805,9 @@ src:url("Raleway/Raleway-Bold.ttf");
         font-size: 11px;
         letter-spacing: 5px;
     }
+    .overlay a{
+        font-size: 20px;
+    }
     #a{
         font-size:5px;
         padding :8px;
@@ -808,6 +822,7 @@ src:url("Raleway/Raleway-Bold.ttf");
         margin-top: 8px;
         font-size: 10px;
         padding:20px;
+        padding-left: 10%;
     }
    
      .banner_txt{
@@ -854,6 +869,7 @@ src:url("Raleway/Raleway-Bold.ttf");
     }
     .stay{
         font-size: 35px;
+        left: 34%;
     }
      .border:nth-child(3) {
     border-right: 1px solid #e0dedb;
@@ -877,11 +893,14 @@ src:url("Raleway/Raleway-Bold.ttf");
  
 @media only screen and (max-width: 500px) {
     .p {
-        font-size: 55px;
+        font-size: 51px;
     }
     .p1{
         font-size: 10px;
         letter-spacing: 5px;
+    }
+    .overlay a{
+        font-size: 18px;
     }
    #a{
         font-size:4px;
@@ -890,6 +909,12 @@ src:url("Raleway/Raleway-Bold.ttf");
     }
     .b{
         font-size: 20px;
+    }
+    .b1{
+        font-size: 25px;
+    }
+    .b2{
+        font-size: 25px;
     }
     #m{
         font-size: 8px;
@@ -908,12 +933,17 @@ src:url("Raleway/Raleway-Bold.ttf");
         margin-top: 10px;
         font-size: 8px;
         padding:10px;
+        padding-left: 10%;
     }
     #mount{
         font-size: 20px;
     }
     #man{
         font-size: 25px;
+    }
+    .stay{
+        font-size: 35px;
+        left: 26%;
     }
     .twoimg{
          min-height: 200px;
@@ -941,8 +971,11 @@ src:url("Raleway/Raleway-Bold.ttf");
     {
          min-height: 380px;
     }
-   .img_man_over{
+    .img_man_over{
         min-height: 380px;
+    }
+    .img_mount{
+        min-height: 220px;
     }
     .btn.btn-default
     {
@@ -951,6 +984,8 @@ src:url("Raleway/Raleway-Bold.ttf");
      #myCarousel .carousel-indicators li
     {
     margin:0 0px;
+    height:5px;
+    width: 5px;
     }
      .last{
         letter-spacing: 0px;
@@ -975,6 +1010,9 @@ src:url("Raleway/Raleway-Bold.ttf");
     .p1{
         font-size: 8px;
     }
+    .overlay a{
+        font-size: 15px;
+    }
     #a{
         font-size:2px;
     }
@@ -993,8 +1031,8 @@ src:url("Raleway/Raleway-Bold.ttf");
    }
    .text{
     margin-top: 10px;
-    font-size: 4px;
-    padding:0px;
+    font-size: 5px;
+    padding:10px;
    }
      
     #man{
@@ -1015,9 +1053,9 @@ src:url("Raleway/Raleway-Bold.ttf");
         margin: 0px;
     }
     .dot_family{
-        top:85%;
+        top:72%;
         position:absolute;
-        left:10%;
+        left:8%;
     } 
     .last{
         letter-spacing: 0px;
